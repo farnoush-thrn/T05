@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D3 Charts Dashboard - Appliance Energy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container" title="Go to Home">
+            <h2>Energy Power</h2> 
+        </div>
+        <nav>
+            <ul>
+                <li><a class="active">D3 Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="intro-section">
+            <h1>TV Power Consumption Dashboard</h1>
+            <p>Welcome to the multi-chart dashboard. Here we explore the relationship between TV screen technologies, sizes, energy consumption, and historical spot power prices in Australia using D3.js.</p>
+        </div>
+
+        <div class="dashboard-grid">
+            
+            <div class="chart-card">
+                <h3>1. Energy Consumption vs Star Rating</h3>
+                <div id="scatter-chart" class="responsive-svg-container"></div>
+            </div>
+
+            <div class="chart-card">
+                <h3>2. Average Spot Power Prices (1998 - 2024)</h3>
+                <div id="line-chart" class="responsive-svg-container"></div>
+            </div>
+
+            <div class="chart-card">
+                <h3>3. Energy Consumption (55-inch TVs)</h3>
+                <div id="bar-chart" class="responsive-svg-container"></div>
+            </div>
+
+            <div class="chart-card">
+                <h3>4. Energy Consumption (All TVs) by Tech</h3>
+                <div id="donut-chart" class="responsive-svg-container"></div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- D3 Library -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    
+    <script src="scatter.js"></script>
+    <script src="line.js"></script>
+    <script src="bar.js"></script>
+    <script src="donut.js"></script>
+</body>
+</html>
